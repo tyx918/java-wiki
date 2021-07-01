@@ -1,5 +1,6 @@
 package com.java.wiki.controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 /* RestController 返回字符串
@@ -14,7 +15,12 @@ public class TestController {
     *
     */
     @RequestMapping("/hello")
-    public String hell0(){
+    public String hello(){
         return "hello world";
+    }
+
+    @PostMapping ("/hello/post")
+    public String helloPost(String name){
+        return "hello world POST, " + name;
     }
 }
