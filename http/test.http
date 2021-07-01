@@ -17,3 +17,6 @@ Content-Type: application/x-www-form-urlencoded
 
 name=TEST
 ###
+
+GET http://127.0.0.1:8014/test/list
+###
